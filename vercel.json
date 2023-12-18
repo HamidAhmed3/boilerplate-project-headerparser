@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "Request Header Parser Microservice",
+    "builds": [
+      { "src": "index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.js" }
+    ]
+  }
